@@ -53,6 +53,9 @@
 	(fib-iter 1 0 n)
 )
 
-
-(spit "output" (sup-fast-fib 5000000))
+(def n 200)
+(if (< n 20)
+	(println n)
+	(spit "output" (sup-fast-fib n))	
+)
 

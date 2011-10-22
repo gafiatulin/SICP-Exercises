@@ -25,8 +25,8 @@
 	(fib-iter 1 0 n)
 )
 
-(println (time (fib-it 10)))
+(println (time (fib-it 50)))
 
-(println (time (nth fibs 10)))
+(println (time (fib-rec 50)))
 
-(println (time (fib-rec 10)))
+(println (time (nth fibs 50)))

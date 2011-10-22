@@ -1,12 +1,12 @@
 (defn binomial-coefficient [i j] 
 	(cond 
 		(or (> j i) (or (< j 1) (< i 1)))	"Invalid" 
-		(or (= j 1) (= j i))				1 
+		(or (= j 1) (= j i))			1 
 		:else
-											(+ 
-												(binomial-coefficient (- i 1) (- j 1)) 
-												(binomial-coefficient (- i 1) j)
-											)
+							(+ 
+								(binomial-coefficient (- i 1) (- j 1)) 
+								(binomial-coefficient (- i 1) j)
+							)
 	)
 )
 

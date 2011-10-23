@@ -1,6 +1,5 @@
-(defn square [x] (* x x))
-
 (defn sup-fast-fib [n] 
+	(defn square [x] (* x x))
 	(defn fib-iter [a b p q counter]
 		(cond
 			(= counter 0) 	b
